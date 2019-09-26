@@ -5,16 +5,16 @@ class Menu extends React.Component {
         return (
             <div class="ui menu">
                 <div class="header item">
-                    Our Company
+                    PyWeb.Dev
                 </div>
                 <a class="item">
-                    About Us
+                    Projects
                 </a>
                 <a class="item">
-                    Jobs
+                    Profile
                 </a>
                 <a class="item active">
-                    Locations
+                    Contact
                 </a>
             </div>
         );
