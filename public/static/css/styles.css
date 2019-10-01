@@ -12,7 +12,7 @@ body {
   .highlight-container {
     display: inline-block;
     padding: 0px 5px 0px 5px;
-    margin: 0px 7px 0px 5px;
+    margin: 0px 7px 0px 7px;
   }
   .highlight-container:before, .highlight-container:after {
     content: " ";

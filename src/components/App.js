@@ -18,7 +18,7 @@ class App extends React.Component {
         <Grid>
         <Router>
           <Grid.Row>
-            <Grid.Column>
+            <Grid.Column padded>
             <Switch>
               <Route exact path="/">
                 <Splash />
