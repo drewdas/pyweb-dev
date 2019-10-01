@@ -16,7 +16,7 @@ export default class Splash extends React.Component {
                 My name is Dhrubajyoti Das  (You can also call me Drew).
                 <Divider hidden />
                 I am a Full-Stack Developer who likes to build things. 
-                This website is a tool I created to showcase <Tilt className="Tilt highlight-container" options={{ max : 35, perspective: 1000, scale: 1.5 }}><span className="Tilt-inner highlight"><span className="ec ec-rocket"></span> Products</span></Tilt>
+                This website is a tool I created to showcase <Tilt className="Tilt highlight-container" options={{ max : 35, perspective: 600, scale: 1.5 }}><span className="Tilt-inner highlight"><span className="ec ec-rocket"></span> Products</span></Tilt>
                 I have built, Latest Updates below showcase what I am currently working on.
             </h1>
 
