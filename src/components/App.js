@@ -21,20 +21,32 @@ class App extends React.Component {
             <Grid.Column padded>
             <Switch>
               <Route exact path="/">
-                <Splash />
-                <LatestFeed />
+                <Grid stackable columns={2}>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <Splash />
+                    </Grid.Column>
+                    <Grid.Column>
+                      <img src="/static/images/taxi-programming.png" />
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
               </Route>
-              <Route path="/products">
+              <Route path="/projects">
                 <h1>These are projects!</h1>
               </Route>
-              <Route path="/contact">
-                <h1>Get in touch yo!</h1>
+              <Route path="/posts">
+                <h1>These are posts!!</h1>
+              </Route>
+              <Route path="/snippets">
+                <h1>These are posts!!</h1>
               </Route>
             </Switch>
             </Grid.Column>
           </Grid.Row>
           </Router>
         </Grid>
+        <LatestFeed></LatestFeed>
       </Container>
       </div>
     );

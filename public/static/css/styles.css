@@ -5,6 +5,10 @@ body {
     padding-top: 15px;
 }
 
+.splash-text {
+    line-height: 1.3;
+}
+
 .highlight-container, .highlight {
     position: relative;
   }
@@ -12,7 +16,7 @@ body {
   .highlight-container {
     display: inline-block;
     padding: 0px 5px 0px 5px;
-    margin: 0px 7px 0px 7px;
+    margin: 3px 7px 3px 7px;
   }
   .highlight-container:before, .highlight-container:after {
     content: " ";
@@ -24,14 +28,14 @@ body {
     position: absolute;
   }
   .highlight-container:before {
-    background: rgba(234, 221, 6, 0.9);
+    background: rgba(254, 221, 6, 0.9);
     transform: rotate(2deg);
-    top: -1px;
+    top: -3px;
     left: -1px;
   }
   .highlight-container:after {
-    background: rgba(234, 210, 6, 0.6);
-    top: 3px;
+    background: rgba(254, 210, 6, 0.6);
+    top: 2px;
     right: -2px;
   }
   .highlight-container .highlight {

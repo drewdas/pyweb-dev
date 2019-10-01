@@ -1,7 +1,7 @@
 import React from 'react';
 import { Segment, Divider } from 'semantic-ui-react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Tilt from 'react-tilt';
+import Tilt from 'react-parallax-tilt';
 import Emoji from './Emoji';
 
 export default class Splash extends React.Component {
@@ -9,57 +9,57 @@ export default class Splash extends React.Component {
         return (
             <Segment
             textAlign='center'
-            style={{ minHeight: 300, padding: '1em 0em' }}
+            style={{ minHeight: 200, padding: '1em 0em' }}
             basic
             >
-            <h1 className="splash-text">
-                Hi There <Emoji symbol="👋"></Emoji> My name is Dhrubajyoti Das (Drew for Short) and I am a Full-Stack Developer. I am currently living in <Emoji symbol="📍"/>Sacramento, CA.
+            <h2 className="splash-text">
+                <span style={{display: "inline-block"}}>Hi There <Emoji symbol="👋"></Emoji></span> My name is Dhrubajyoti Das (Drew for Short). I am a Full-Stack Developer, currently living in <span style={{display: "inline-block"}}><Emoji symbol="📍"/>Sacramento, CA</span>.
                 <Divider hidden />
                 This website is a tool I built to manage and showcase my
-                <Tilt 
-                className="Tilt highlight-container" 
-                options={{ max : 50, perspective: 1000, scale: 1.1 }}
-                >
-                <span className="Tilt-inner highlight">
-                    <Emoji symbol="🚀" /> Projects
-                </span>
-                </Tilt>, share my 
-                <Tilt 
-                className="Tilt highlight-container" 
-                options={{ max : 50, perspective: 1000, scale: 1.1 }}
-                >
-                <span className="Tilt-inner highlight">
-                <Emoji symbol="💭" /> Thoughts
-                </span>
-                </Tilt> and save my favorite 
-                <Tilt 
-                className="Tilt highlight-container" 
-                options={{ max : 50, perspective: 1000, scale: 1.1 }}
-                >
-                <span className="Tilt-inner highlight">
-                    <i className="fas fa-code"></i>  Code Snippets.
-                </span>
-                </Tilt>
+                <Link to='/projects'>
+                    <Tilt 
+                        className="highlight-container" 
+                        scale={1.2}
+                        gyroscope={true}
+                    >
+                    <span className="highlight">
+                        <Emoji symbol="🚀" /> Projects 
+                    </span>
+                    </Tilt>
+                </Link> 
+                as well as organize my 
+                <Link to='/posts'>
+                    <Tilt 
+                        className="highlight-container" 
+                        scale={1.2} 
+                        gyroscope={true}
+                    >
+                    <span className="tilt-inner highlight">
+                        <Emoji symbol="💭" /> Thoughts
+                    </span>
+                    </Tilt>
+                </Link>.
                 <Divider hidden />
-                I am currently available for full-time/part-time 
-                employment and contract work. You can get in touch with me on
+                You can get in touch with me on
                 <Tilt 
-                className="Tilt highlight-container" 
-                options={{ max : 50, perspective: 1000, scale: 1.1 }}
+                    className="highlight-container" 
+                    scale={1.2}
+                    gyroscope={true}
                 >
-                <span className="Tilt-inner highlight">
-                <i class="fab fa-linkedin" style={{color: '#1293d2'}}></i> LinkedIn 
-                </span> 
-                </Tilt> or <Tilt 
-                className="Tilt highlight-container" 
-                options={{ max : 50, perspective: 1000, scale: 1.1 }}
+                    <span className="highlight">
+                        <i class="fab fa-linkedin" style={{color: '#1293d2'}}></i> LinkedIn 
+                    </span> 
+                </Tilt> or 
+                <Tilt 
+                    className="highlight-container" 
+                    scale={1.2}
+                    gyroscope={true}
                 >
-                <span className="Tilt-inner highlight">
-                <Emoji symbol="✉️" /> Email 
-                </span> 
-                </Tilt> 
-            </h1>
-
+                    <span className="highlight">
+                        <Emoji symbol="✉️" /> Email
+                    </span> 
+                </Tilt>
+            </h2>
             </Segment>
         );
     }
