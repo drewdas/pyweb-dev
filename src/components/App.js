@@ -1,5 +1,6 @@
 import React from 'react';
 import SideMenu from './SideMenu';
+import TopMenu from './TopMenu';
 import Splash from './Splash';
 import { Container, Grid } from 'semantic-ui-react';
 import LatestFeed from './LatestFeed';
@@ -12,17 +13,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
+      <TopMenu></TopMenu>
       <Container>
-        <div align="center">
-        <img src="/static/images/logo.png" width="250px" />
-        </div>
         <Grid>
         <Router>
           <Grid.Row>
-            <Grid.Column width={2}>
-              <SideMenu></SideMenu>
-            </Grid.Column>
-            <Grid.Column width={14}>
+            <Grid.Column>
             <Switch>
               <Route exact path="/">
                 <Splash />
