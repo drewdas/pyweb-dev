@@ -12,10 +12,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
+      <Router>
       <TopMenu></TopMenu>
       <Container>
         <Grid>
-        <Router>
           <Grid.Row>
             <Grid.Column padded>
             <Switch>
@@ -50,9 +50,9 @@ class App extends React.Component {
             </Switch>
             </Grid.Column>
           </Grid.Row>
-          </Router>
         </Grid>
       </Container>
+      </Router>
       </div>
     );
   }
