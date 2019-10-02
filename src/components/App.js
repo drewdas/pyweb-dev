@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends React.Component {
   render() {
     return (
-      <div>
       <Router>
       <TopMenu></TopMenu>
       <Container>
@@ -53,7 +52,6 @@ class App extends React.Component {
         </Grid>
       </Container>
       </Router>
-      </div>
     );
   }
 }
