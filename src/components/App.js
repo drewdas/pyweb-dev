@@ -4,7 +4,7 @@ import Splash from './Splash';
 import { Container, Grid } from 'semantic-ui-react';
 import LatestFeed from './LatestFeed';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import MyStack from './MyStack';
 
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -30,9 +30,18 @@ class App extends React.Component {
                   </Grid.Row>
                   </Grid>
                   <Grid>
+                    <Grid.Row>
+                      <Grid.Column>
+                        <LatestFeed></LatestFeed>
+                      </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+              </Route>
+              <Route path="/stack">
+                <Grid>
                   <Grid.Row>
                     <Grid.Column>
-                      <LatestFeed></LatestFeed>
+                        <MyStack></MyStack>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
