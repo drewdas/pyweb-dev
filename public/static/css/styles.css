@@ -7,6 +7,8 @@ body {
 
 .splash-text {
     line-height: 1.3;
+    font-size: 1.8em;
+    font-weight: 600;
 }
 
 .highlight-container, .highlight {

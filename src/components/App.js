@@ -1,5 +1,4 @@
 import React from 'react';
-import SideMenu from './SideMenu';
 import TopMenu from './TopMenu';
 import Splash from './Splash';
 import { Container, Grid } from 'semantic-ui-react';
@@ -27,7 +26,14 @@ class App extends React.Component {
                       <Splash />
                     </Grid.Column>
                     <Grid.Column>
-                      <img src="/static/images/taxi-programming.png" />
+                      <img alt="splash" src="/static/images/taxi-programming.png" />
+                    </Grid.Column>
+                  </Grid.Row>
+                  </Grid>
+                  <Grid>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <LatestFeed></LatestFeed>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -46,7 +52,6 @@ class App extends React.Component {
           </Grid.Row>
           </Router>
         </Grid>
-        <LatestFeed></LatestFeed>
       </Container>
       </div>
     );
